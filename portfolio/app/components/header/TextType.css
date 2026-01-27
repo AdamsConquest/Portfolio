@@ -1,0 +1,38 @@
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}
+
+.text-type-description {
+  display: inline-block;
+  white-space: pre-wrap;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-align: center;
+  opacity: 0.9;
+}
