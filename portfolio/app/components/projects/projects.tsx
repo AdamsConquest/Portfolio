@@ -4,7 +4,7 @@ import './projects.css';
 export default function Projects() {
     return (
         <div className="projects">
-            <h2>My Projects</h2>
+            <h2>Projects</h2>
             <ul className="projects-list">
                 <li className="project-item">
                     <h3>Crisis Protocol</h3>

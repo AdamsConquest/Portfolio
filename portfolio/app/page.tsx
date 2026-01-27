@@ -5,14 +5,14 @@ import Name from './components/header/name';
 import AboutMe from './components/aboutMe/aboutme';
 import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
-import Nav from './components/nav/nav';
+import Navigation from './components/nav/nav';
 
 
 export default function Home() {
   return (
     <div>
       <Background />
-      <Nav />
+      <Navigation />
       
       <section id="home" style={{ height: '100vh', position: 'relative' }}>
         <Name />

@@ -1,27 +1,25 @@
-import Dock from './dock';
-import { VscHome, VscArchive, VscAccount, VscBook } from 'react-icons/vsc';
+import PillNav from './PillNav';
 
-const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
-  element?.scrollIntoView({ behavior: 'smooth' });
-};
-
-const items = [
-  { icon: <VscHome size={18} />, label: 'Home', onClick: () => scrollToSection('home') },
-  { icon: <VscBook size={18} />, label: 'About Me', onClick: () => scrollToSection('about') },
-  { icon: <VscArchive size={18} />, label: 'Projects', onClick: () => scrollToSection('projects') },
-  { icon: <VscAccount size={18} />, label: 'Skills', onClick: () => scrollToSection('skills') },
-];
-
-export default function Nav() {
+export default function Dock() {
   return (
-    <div>
-      <Dock
-        items={items}
-        panelHeight={60}
-        baseItemSize={70}
-        magnification={90}
-      />
-    </div>
-  );
+    <PillNav
+      logo="/github.svg"
+      logoAlt="Company Logo"
+      items={[
+        { label: 'Home', href: '#home' },
+        { label: 'About', href: '#about' },
+        { label: 'Projects', href: '#projects' },
+        { label: 'Skills', href: '#skills' }
+      ]}
+      activeHref="#home"
+      className="custom-nav"
+      ease="power2.easeOut"
+      baseColor="#00000000"
+      pillColor="#00000000"
+      hoveredPillTextColor="#ffffff"
+      pillTextColor="#ffffff"
+
+      initialLoadAnimation={true}
+    />
+  )
 }
