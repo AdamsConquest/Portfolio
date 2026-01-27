@@ -17,7 +17,7 @@ export default function Projects() {
                 </li>
 
                 <li className="project-item">
-                    <h4>Project 2</h4>
+                    <h4>Thesarus</h4>
                     <Image 
                         src="/images/gameJam.png" 
                         alt=""
@@ -27,7 +27,7 @@ export default function Projects() {
                 </li>
 
                 <li className="project-item">
-                    <h4>Project 3</h4>
+                    <h4>Projet Petites Puces</h4>
                     <Image 
                         src="/images/gameJam.png" 
                         alt=""

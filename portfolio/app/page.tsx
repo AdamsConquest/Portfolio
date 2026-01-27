@@ -1,10 +1,9 @@
 "use client";
-import Image from "next/image";
 import Background from "./components/background/background";
 import Name from './components/header/name';
 import AboutMe from './components/aboutMe/aboutme';
 import Projects from './components/projects/projects';
-import Attributes from './components/Skills/skills';
+import Skills from './components/skills/skills';
 import Navigation from './components/nav/nav';
 
 
@@ -27,7 +26,7 @@ export default function Home() {
       </section>
       
       <section id="skills" style={{ height: '100vh', position: 'relative' }}>
-        <Attributes />
+        <Skills />
       </section>
     </div>
   );

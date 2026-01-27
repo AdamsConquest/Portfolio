@@ -4,7 +4,7 @@ export default function Background() {
     <div>
        <LightRays
         raysOrigin="top-center"
-        raysColor="#ffffff"
+        raysColor="#000000"
         raysSpeed={1}
         lightSpread={0.5}
         rayLength={3}
