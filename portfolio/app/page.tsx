@@ -3,6 +3,7 @@ import Image from "next/image";
 import LightRays from './components/background/LightRays';
 import Name from './components/header/name';
 import AboutMe from './components/aboutMe/aboutme';
+import Projects from './components/projects/projects';
 
 
 export default function Home() {
@@ -25,7 +26,8 @@ export default function Home() {
       />
         <Name/>
         <AboutMe/>
-        
+        <Projects/>
+
     </div>
   );
 }

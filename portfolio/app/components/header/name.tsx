@@ -1,6 +1,6 @@
 import TextType from './TextType';
 import Description from "./description";
-import "./TextType.css";
+import "./name.css";
 
 export default function Name() {
     return (
