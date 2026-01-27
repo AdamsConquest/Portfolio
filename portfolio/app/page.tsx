@@ -1,33 +1,34 @@
 "use client";
 import Image from "next/image";
-import LightRays from './components/background/LightRays';
+import Background from "./components/background/background";
 import Name from './components/header/name';
 import AboutMe from './components/aboutMe/aboutme';
 import Projects from './components/projects/projects';
+import Skills from './components/skills/skills';
+import Nav from './components/nav/nav';
 
 
 export default function Home() {
   return (
-    <div style={{ width: '100%', height: 'auto', position: 'relative' }}>
-      <LightRays
-        raysOrigin="top-center"
-        raysColor="#ffffff"
-        raysSpeed={1}
-        lightSpread={0.5}
-        rayLength={3}
-        followMouse={true}
-        mouseInfluence={0.1}
-        noiseAmount={0}
-        distortion={0}
-        className="custom-rays"
-        pulsating={false}
-        fadeDistance={1}
-        saturation={1}
-      />
-        <Name/>
-        <AboutMe/>
-        <Projects/>
-
+    <div>
+      <Background />
+      <Nav />
+      
+      <section id="home" style={{ height: '100vh', position: 'relative' }}>
+        <Name />
+      </section>
+      
+      <section id="about" style={{ height: '100vh', position: 'relative' }}>
+        <AboutMe />
+      </section>
+      
+      <section id="projects" style={{ height: '100vh', position: 'relative' }}>
+        <Projects />
+      </section>
+      
+      <section id="skills" style={{ height: '100vh', position: 'relative' }}>
+        <Skills />
+      </section>
     </div>
   );
 }
