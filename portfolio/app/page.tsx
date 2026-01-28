@@ -1,5 +1,5 @@
 "use client";
-import Background from "./components/background/background";
+import { ParticlesDemo as Background } from './components/background/background';
 import Name from './components/header/name';
 import AboutMe from './components/aboutMe/aboutme';
 import Skills from './components/skills/skills';
@@ -9,6 +9,7 @@ import { AnimatedTabsDemo } from './components/projects/projectDisplay';
 
 export default function Home() {
   return (
+    
     <div>
       <Background />
       <Navigation />

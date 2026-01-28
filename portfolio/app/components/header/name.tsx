@@ -1,4 +1,3 @@
-import TextType from './TextType';
 import Description from "./description";
 import "./name.css";
 
@@ -9,10 +8,6 @@ export default function Name() {
                 Adam Ali
             </div>
             <Description />
-
         </div>
-
-
-
     );
 }
