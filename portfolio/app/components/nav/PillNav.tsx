@@ -326,7 +326,7 @@ const PillNav: React.FC<PillNavProps> = ({
                 className={`mobile-menu-link${activeHref === item.href ? ' is-active' : ''}`}
                 onClick={(e) => {
                   handleAnchorClick(e, item.href);
-                  setIsMobileMenuOpen(false);
+                  toggleMobileMenu();
                 }}
               >
                 {item.label}

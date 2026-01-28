@@ -6,7 +6,7 @@ export default function Name() {
     return (
         <div className="home-container">
             <div className="text-type">
-                Adam
+                Adam Ali
             </div>
             <Description />
 
