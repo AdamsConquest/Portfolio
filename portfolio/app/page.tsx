@@ -2,9 +2,9 @@
 import Background from "./components/background/background";
 import Name from './components/header/name';
 import AboutMe from './components/aboutMe/aboutme';
-import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
 import Navigation from './components/nav/nav';
+import { AnimatedTabsDemo } from './components/projects/projectDisplay';
 
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       </section>
       
       <section id="projects" style={{ height: '100vh', position: 'relative' }}>
-        <Projects />
+        <AnimatedTabsDemo />
       </section>
       
       <section id="skills" style={{ height: '100vh', position: 'relative' }}>

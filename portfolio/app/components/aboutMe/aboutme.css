@@ -10,9 +10,13 @@
   font-size: 1.2rem;
   font-weight: normal;
   text-align: center;
-  opacity: 0.85;
   max-width: 800px;
   line-height: 1.6;
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 2rem;
+  border-radius: 0.75rem;
 }
 
 .about-me h2 {

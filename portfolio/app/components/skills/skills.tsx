@@ -6,7 +6,7 @@ export default function AnimatedCardBackgroundHover() {
     {
       id: 1,
       title: 'Frontend',
-      description: 'CSS, React, Next.js, Bootstrap',
+      description: 'CSS, React, Next.js, Bootstrap,',
     },
     {
       id: 2,

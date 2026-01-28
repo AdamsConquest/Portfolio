@@ -4,7 +4,7 @@ import "./name.css";
 
 export default function Name() {
     return (
-        <div>
+        <div className="home-container">
             <div className="text-type">
                 Adam
             </div>
