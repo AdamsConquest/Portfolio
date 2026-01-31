@@ -5,6 +5,7 @@ import AboutMe from './components/aboutMe/aboutme';
 import Skills from './components/skills/skills';
 import Navigation from './components/nav/nav';
 import { AnimatedTabsDemo } from './components/projects/projectDisplay';
+import ContactMe from './components/contactMe/contactMe';
 
 
 export default function Home() {
@@ -28,6 +29,10 @@ export default function Home() {
       
       <section id="skills" style={{ height: '100vh', position: 'relative' }}>
         <Skills />
+      </section>
+
+      <section id="contact" style={{ height: '100vh', position: 'relative' }}>
+        <ContactMe />
       </section>
     </div>
   );

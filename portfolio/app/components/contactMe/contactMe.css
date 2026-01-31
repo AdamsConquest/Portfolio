@@ -1,0 +1,86 @@
+.contact-container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2rem 2rem 1.5rem 2rem;
+  background: rgba(6, 0, 16, 0.35);
+  border-radius: 20px;
+  border: 1px solid rgba(132, 0, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  font-family: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 1.1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-top: 0.3rem;
+  border: 1px solid rgba(132, 0, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1.5px solid #8400ff;
+  background: rgba(255,255,255,0.13);
+}
+
+.contact-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.7rem 0;
+  background: linear-gradient(90deg, #8400ff 0%, #7c3aed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(132, 0, 255, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #7c3aed 0%, #8400ff 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.contact-status {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #10b981;
+  min-height: 1.2em;
+}
