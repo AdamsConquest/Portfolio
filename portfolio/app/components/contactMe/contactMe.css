@@ -84,3 +84,12 @@
   color: #10b981;
   min-height: 1.2em;
 }
+
+/* Ensure honeypot field is completely hidden */
+input[name="website"] {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+}
