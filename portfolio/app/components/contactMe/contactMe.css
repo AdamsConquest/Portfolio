@@ -2,9 +2,9 @@
   max-width: 420px;
   margin: 0 auto;
   padding: 2rem 2rem 1.5rem 2rem;
-  background: rgba(6, 0, 16, 0.35);
+  background: rgba(17, 17, 17, 0.6);
   border-radius: 20px;
-  border: 1px solid rgba(132, 0, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.300);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -16,12 +16,31 @@
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 768px) {
+  .contact-container {
+    max-width: calc(100% - 2rem);
+    padding: 1.5rem 1.25rem;
+    margin: 1rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
+
 .contact-container h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .contact-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .contact-form label {
@@ -36,7 +55,7 @@
   width: 100%;
   padding: 0.7rem 1rem;
   margin-top: 0.3rem;
-  border: 1px solid rgba(132, 0, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
   background: rgba(255,255,255,0.08);
   color: #fff;
@@ -48,7 +67,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border: 1.5px solid #8400ff;
+  border: 1.5px solid #ffffff;
   background: rgba(255,255,255,0.13);
 }
 
@@ -61,19 +80,19 @@
   width: 100%;
   margin-top: 0.5rem;
   padding: 0.7rem 0;
-  background: linear-gradient(90deg, #8400ff 0%, #7c3aed 100%);
+  background: #111111d1;
   color: #fff;
   border: none;
   border-radius: 10px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(132, 0, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.533);
   transition: background 0.2s, transform 0.2s;
 }
 
 .contact-form button:hover {
-  background: linear-gradient(90deg, #7c3aed 0%, #8400ff 100%);
+  background: linear-gradient(90deg, #58555c 0%, #58555c 100%);
   transform: translateY(-2px) scale(1.03);
 }
 
@@ -92,4 +111,45 @@ input[name="website"] {
   width: 1px !important;
   height: 1px !important;
   opacity: 0 !important;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.social-link {
+  color: #e0e0e0;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.social-link svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+  
+  .social-link svg {
+    width: 28px;
+    height: 28px;
+  }
 }

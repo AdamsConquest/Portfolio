@@ -10,7 +10,7 @@ export type PillNavItem = {
 };
 
 export interface PillNavProps {
-  logo: string;
+  logo?: string;
   logoAlt?: string;
   items: PillNavItem[];
   activeHref?: string;
@@ -261,18 +261,28 @@ const PillNav: React.FC<PillNavProps> = ({
   return (
     <div className="pill-nav-container">
       <nav className={`pill-nav ${className}`} aria-label="Primary" style={cssVars}>
-        <a
-          className="pill-logo"
-          href={items?.[0]?.href || '#'}
-          aria-label="Home"
-          onMouseEnter={handleLogoEnter}
-          onClick={(e) => handleAnchorClick(e, items?.[0]?.href || '#')}
-          ref={el => {
-            logoRef.current = el;
-          }}
-        >
-          <img src={logo} alt={logoAlt} ref={logoImgRef} />
-        </a>
+        {logo && (
+          <a
+            className="pill-logo"
+            href={activeHref || items?.[0]?.href || '#'}
+            aria-label={activeHref ? logoAlt : "Home"}
+            onMouseEnter={handleLogoEnter}
+            onClick={(e) => {
+              if (activeHref && isExternalLink(activeHref)) {
+                // Allow external link to open normally
+                return;
+              }
+              handleAnchorClick(e, activeHref || items?.[0]?.href || '#');
+            }}
+            target={activeHref && isExternalLink(activeHref) ? "_blank" : undefined}
+            rel={activeHref && isExternalLink(activeHref) ? "noopener noreferrer" : undefined}
+            ref={el => {
+              logoRef.current = el;
+            }}
+          >
+            <img src={logo} alt={logoAlt} ref={logoImgRef} />
+          </a>
+        )}
 
         <div className="pill-nav-items desktop-only" ref={navItemsRef}>
           <ul className="pill-list" role="menubar">

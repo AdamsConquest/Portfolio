@@ -6,12 +6,12 @@ export default function AnimatedCardBackgroundHover() {
     {
       id: 1,
       title: 'Frontend',
-      description: 'CSS, React, Next.js, Bootstrap,',
+      description: 'CSS, React, Next.js, Bootstrap',
     },
     {
       id: 2,
       title: 'Backend',
-      description: 'Java, C#, PHP, Node.js'
+      description: 'Java, C#, PHP, Node.js, REST APIs'
     },
     {
       id: 3,
@@ -21,12 +21,12 @@ export default function AnimatedCardBackgroundHover() {
     {
       id: 4,
       title: 'Tools and Environments',
-      description: 'Git / GitHub, Bash',
+      description: 'GitHub, Bash',
     },
     {
       id: 5,
-      title: 'Development Practices',
-      description: 'Team collaboration, Academic projects',
+      title: 'Soft Skills',
+      description: 'Problem-solving, Communication'
     },
     
   ];
