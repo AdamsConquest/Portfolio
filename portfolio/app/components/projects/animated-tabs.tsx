@@ -32,7 +32,7 @@ const defaultTabs: Tab[] = [
           Protocol Crisis
         </h2>
         <p className="text-sm text-gray-200 mt-0">
-          A unity 3D game developed during a game jam. Coded in C# 
+          A Unity 3D game jam project built with C#. Survive enemy waves while repairing your ship to keep it operational.
         </p>
       </div>
     </div>
@@ -53,7 +53,7 @@ const defaultTabs: Tab[] = [
           Thesaurus
         </h2>
         <p className="text-sm text-gray-200 mt-0">
-          A webGl application built with simple HTML, CSS, and JavaScript.
+          A WebGL game built with simple HTML, CSS, and JavaScript. Navigate through a maze to find the hidden treasure.
         </p>
       </div>
     </div>
