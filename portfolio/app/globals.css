@@ -146,3 +146,65 @@ body::-webkit-scrollbar {
     @apply bg-background text-foreground;
   }
 }
+
+/* Portfolio Section Styles */
+.portfolio-wrapper {
+  overflow-x: hidden;
+}
+
+.section-container {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+/* Home section - full viewport */
+.section-home {
+  padding-top: 5rem;
+}
+
+/* Projects section needs more space on mobile */
+.section-projects {
+  min-height: auto;
+  padding: 4rem 1rem;
+}
+
+/* Skills section */
+.section-skills {
+  min-height: auto;
+  padding: 4rem 1rem;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .section-container {
+    min-height: auto;
+    padding: 3rem 1rem;
+  }
+  
+  .section-home {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: 4rem;
+  }
+  
+  .section-projects,
+  .section-skills {
+    padding: 2rem 0.75rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .section-container {
+    padding: 2rem 0.5rem;
+  }
+  
+  .section-home {
+    padding-top: 3rem;
+  }
+}

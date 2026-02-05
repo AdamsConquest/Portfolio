@@ -11,27 +11,27 @@ import ContactMe from './components/contactMe/contactMe';
 export default function Home() {
   return (
     
-    <div>
+    <div className="portfolio-wrapper">
       <Background />
       <Navigation />
       
-      <section id="home" style={{ height: '100vh', position: 'relative' }}>
+      <section id="home" className="section-container section-home">
         <Name />
       </section>
       
-      <section id="about" style={{ height: '100vh', position: 'relative' }}>
+      <section id="about" className="section-container">
         <AboutMe />
       </section>
       
-      <section id="projects" style={{ height: '100vh', position: 'relative' }}>
+      <section id="projects" className="section-container section-projects">
         <AnimatedTabsDemo />
       </section>
       
-      <section id="skills" style={{ height: '100vh', position: 'relative' }}>
+      <section id="skills" className="section-container section-skills">
         <Skills />
       </section>
 
-      <section id="contact" style={{ height: '100vh', position: 'relative' }}>
+      <section id="contact" className="section-container">
         <ContactMe />
       </section>
     </div>
