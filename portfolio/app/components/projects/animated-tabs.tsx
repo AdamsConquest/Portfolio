@@ -21,19 +21,33 @@ const defaultTabs: Tab[] = [
   id: "tab1",
   label: "Protocol Crisis",
   content: (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-full">
       <img
         src="/images/gamejam.png"
         alt="Protocol Crisis"
         className="rounded-lg w-full h-60 object-cover mt-0 !m-0 shadow-[0_0_20px_rgba(0,0,0,0.2)] border-none"
       />
 
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-3 justify-start">
         <h2 className="text-2xl font-bold mb-0 text-white mt-0 !m-0">
           Protocol Crisis
         </h2>
-        <p className="text-sm text-gray-200 mt-0">
-          A Unity 3D game jam project built with C#. Survive enemy waves while repairing your ship to keep it operational.
+        <p className="text-sm text-gray-200 mt-0 leading-relaxed">
+          A challenging Unity 3D game developed for a game jam. Players must survive enemy waves while managing ship repairs to stay operational.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-blue-500/30 text-blue-200 text-xs rounded-full border border-blue-500/50">
+            Unity 3D
+          </span>
+          <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-xs rounded-full border border-purple-500/50">
+            C#
+          </span>
+          <span className="px-3 py-1 bg-green-500/30 text-green-200 text-xs rounded-full border border-green-500/50">
+            Game Development
+          </span>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">
+           Implemented game mechanics, enemy AI, and UI systems
         </p>
       </div>
     </div>
@@ -43,18 +57,32 @@ const defaultTabs: Tab[] = [
   id: "tab2",
   label: "Thesaurus",
   content: (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-full">
       <img
         src="/images/Thesaurus.png"
         alt="Thesaurus"
         className="rounded-lg w-full h-60 object-cover mt-0 !m-0 shadow-[0_0_20px_rgba(0,0,0,0.2)] border-none"
       />
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-3 justify-start">
         <h2 className="text-2xl font-bold mb-0 text-white mt-0 !m-0">
           Thesaurus
         </h2>
-        <p className="text-sm text-gray-200 mt-0">
-          A WebGL game built with simple HTML, CSS, and JavaScript. Navigate through a maze to find the hidden treasure.
+        <p className="text-sm text-gray-200 mt-0 leading-relaxed">
+          An interactive WebGL maze game built with vanilla web technologies. Navigate through challenging levels to discover hidden treasures.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-yellow-500/30 text-yellow-200 text-xs rounded-full border border-yellow-500/50">
+            HTML/CSS
+          </span>
+          <span className="px-3 py-1 bg-yellow-500/30 text-yellow-200 text-xs rounded-full border border-yellow-500/50">
+            JavaScript
+          </span>
+          <span className="px-3 py-1 bg-cyan-500/30 text-cyan-200 text-xs rounded-full border border-cyan-500/50">
+            WebGL
+          </span>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">
+           Developed 3D graphics rendering and collision detection
         </p>
       </div>
     </div>
@@ -64,18 +92,32 @@ const defaultTabs: Tab[] = [
   id: "tab3",
   label: "Projet Petites Puces",
   content: (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-full">
       <img
         src="/images/petitespuces.png"
         alt="Projet Petites Puces"
         className="rounded-lg w-full h-60 object-cover mt-0 !m-0  shadow-[0_0_20px_rgba(0,0,0,0.2)] border-none"
       />
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-3 justify-start">
         <h2 className="text-2xl font-bold mb-0 text-white mt-0 !m-0">
           Projet Petites Puces
         </h2>
-        <p className="text-sm text-gray-200 mt-0">
-          A React and ASP.NET based project that focuses on creating a marketplace with a SQL database.
+        <p className="text-sm text-gray-200 mt-0 leading-relaxed">
+          A full-stack marketplace platform built with React and ASP.NET. Features user authentication, product listings, and a robust SQL database backend.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-indigo-500/30 text-indigo-200 text-xs rounded-full border border-indigo-500/50">
+            React
+          </span>
+          <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-xs rounded-full border border-purple-500/50">
+            ASP.NET
+          </span>
+          <span className="px-3 py-1 bg-orange-500/30 text-orange-200 text-xs rounded-full border border-orange-500/50">
+            SQL Database
+          </span>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">
+           Designed database schema, API endpoints, and responsive UI
         </p>
       </div>
     </div>
@@ -139,9 +181,7 @@ return (
             </motion.div>
           )
       )}
-    </div>
-
-    <div className="md:hidden flex flex-col gap-2">
+    </div>    <div className="md:hidden flex flex-col gap-2">
       {tabs.map((tab) => (
         <button
           key={tab.id}
