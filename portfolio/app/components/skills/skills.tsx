@@ -1,4 +1,4 @@
-import AnimatedBackground from '@/app/components/Skills/animated-background';
+import AnimatedBackground from '@/app/components/skills/animated-background';
 import './skills.css';
 
 export default function AnimatedCardBackgroundHover() {  const ITEMS = [
